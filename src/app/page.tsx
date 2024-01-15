@@ -8,6 +8,7 @@ export default function Home() {
       <Head>
         <title>Next.js Starter!</title>
         <link rel="icon" href="/favicon.ico" />
+        {/* eslint-disable-next-line @next/next/no-sync-scripts */}
         <script src="/styles/rpgui.js"></script>
       </Head>
 
