@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Press_Start_2P } from 'next/font/google';
 import '@styles/globals.css';
 import '@styles/rpgui.css';
 
-const inter = Inter({ subsets: ['latin'] });
+const PS2P = Press_Start_2P({ subsets: ['latin'], weight: '400' });
 
 export const metadata: Metadata = {
   title: 'The Hero of Ages: Andrew Schaffner',
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={PS2P.className}>{children}</body>
     </html>
   );
 }
