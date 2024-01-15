@@ -226,7 +226,6 @@ inside your html file.
   height: 100%;
   left: 0px;
   top: 0px;
-  position: fixed;
   overflow: hidden;
   font-size: 0.8em;
 }
@@ -252,18 +251,30 @@ inside your html file.
   image-rendering: -webkit-crisp-edges;
   image-rendering: -moz-crisp-edges;
   image-rendering: -o-crisp-edges;
-  image-rendering: pixelated;
-  /* default font */
-  font-family: 'Press Start 2P', cursive;
+  image-rendering: pixelated;  
 }
 
+/**
+* sets the starting layout for the parent container and inner border
+*/
+
+#container {
+  background: #222;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.inner {
+  min-width: 1200px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
 /**
 * customized divs (containers) and framed objects (background and frame image).
 */
 /* game div without background image*/
 .rpgui-container {
   /* position style and default z */
-  position: fixed;
   z-index: 10;
   overflow: show;
 }
