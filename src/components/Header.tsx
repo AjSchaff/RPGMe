@@ -1,5 +1,9 @@
-import React from 'react';
+import React, { FC } from 'react';
 
-export default function Header({ title }) {
-  return <h1 className="title">{title}</h1>;
+export interface Props {
+  title: string;
 }
+
+export const Header: FC<Props> = ({ title }) => {
+  return <h1 className="title">{title}</h1>;
+};
