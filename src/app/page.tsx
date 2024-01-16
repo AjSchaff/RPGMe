@@ -1,8 +1,10 @@
 import Head from 'next/head';
+import Script from 'next/script';
 import Header from '@components/Header';
 import Footer from '@components/Footer';
-import StatBar from '@components/StatBar/StatBar';
+import StatBar from '@components/Stats/StatBar';
 import HeroName from '@components/HeroName/HeroName';
+import { HeroStats } from '../constants';
 
 export default function Home() {
   return (
@@ -10,23 +12,16 @@ export default function Home() {
       <Head>
         <title>Next.js Starter!</title>
         <link rel="icon" href="/favicon.ico" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
-          rel="stylesheet"
-        />
-        {/* eslint-disable-next-line @next/next/no-sync-scripts */}
-        <script src="/styles/rpgui.js"></script>
       </Head>
+      <Script src="/rpgui.js" strategy='beforeInteractive' />
 
       <div className="rpgui-content rpgui-cursor-default">
         <div id="container">
           <div className="inner">
-            <div className="rpgui-container framed">
+            <div className="rpgui-container framed grid">
               <HeroName />
 
-              <StatBar title={['STR']} />
+              <StatBar stats={HeroStats} />
             </div>
           </div>
         </div>
