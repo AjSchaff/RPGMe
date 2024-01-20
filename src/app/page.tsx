@@ -13,7 +13,7 @@ export default function Home() {
         <title>Next.js Starter!</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Script src="/rpgui.js" strategy='beforeInteractive' />
+      <Script src="/rpgui.js" strategy="beforeInteractive" />
 
       <div className="rpgui-content rpgui-cursor-default">
         <div id="container">
