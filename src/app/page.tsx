@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Script from 'next/script';
 import Header from '@components/Header';
 import Footer from '@components/Footer';
-import StatBar from '@components/Stats/StatBar';
+import HeroOverview from '@components/HeroOverview';
 import HeroName from '@components/HeroName/HeroName';
 import { HeroStats } from '../constants';
 
@@ -21,7 +21,7 @@ export default function Home() {
             <div className="rpgui-container framed grid">
               <HeroName />
 
-              <StatBar stats={HeroStats} />
+              <HeroOverview stats={HeroStats} />
             </div>
           </div>
         </div>
