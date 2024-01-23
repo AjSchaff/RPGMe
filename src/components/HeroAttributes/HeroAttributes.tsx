@@ -7,7 +7,7 @@ export interface Props {
 
 const HeroAttributes: FC<Props> = ({ stats }) =>
   stats.map((stat, index) => (
-    <div key={`${index}`} className="rpgui-container rpgui-center framed flex">
+    <div key={`${index}`} className="rpgui-container rpgui-center framed flex mb-1">
       <div>
         <i className={`rpgui-icon ${stat.icon}`}></i>
       </div>
