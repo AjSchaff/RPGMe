@@ -70,8 +70,8 @@ inside your html file.
   /* font size */
   font-size: 1em;
   /* default size and display */
-  max-width: 100%;
-  min-width: 225px;
+  /* max-width: 100%; */
+  /* min-width: 225px; */
   height: 60px;
   display: inline-block;
   /* padding */
