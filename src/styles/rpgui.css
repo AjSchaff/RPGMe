@@ -71,12 +71,12 @@ inside your html file.
   font-size: 1em;
   /* default size and display */
   max-width: 100%;
-  min-width: 140px;
+  min-width: 225px;
   height: 60px;
   display: inline-block;
   /* padding */
-  padding-left: 35px;
-  padding-right: 35px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /* button hover */
@@ -251,7 +251,7 @@ inside your html file.
   image-rendering: -webkit-crisp-edges;
   image-rendering: -moz-crisp-edges;
   image-rendering: -o-crisp-edges;
-  image-rendering: pixelated;  
+  image-rendering: pixelated;
 }
 
 /**
@@ -265,7 +265,6 @@ inside your html file.
 }
 
 .inner {
-  min-width: 1200px;
   max-width: 1400px;
   margin: 0 auto;
 }
@@ -741,8 +740,6 @@ ul.rpgui-list-imp {
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
   font-size: 1.15em;
   text-decoration: underline;
-  /* center text */
-  text-align: center;
   /* padding */
   padding: 0 0 0 0;
   margin: 7px 7px 17px 7px;
@@ -756,8 +753,6 @@ ul.rpgui-list-imp {
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
   font-size: 1em;
   text-decoration: underline;
-  /* center text */
-  text-align: center;
   /* padding */
   padding: 0 0 0 0;
   margin: 7px 7px 17px 7px;
@@ -809,11 +804,35 @@ ul.rpgui-list-imp {
 /* default gui label */
 .rpgui-content li {
   /* color and border */
-  margin-left: 20px;
+  margin-left: 10px;
   color: white;
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
   font-size: 1em;
   line-height: 22px;
+  padding-bottom: 20px;
+}
+
+/* 
+* custom li bullets
+*/
+li {
+  list-style: none;
+}
+
+/* Set the list image as background image*/
+li::before {
+  content: '';
+  display: inline-block;
+  margin-right: 10px;
+
+  /* Height of the list image*/
+  height: 13px;
+
+  /* Width of the list image*/
+  width: 12px;
+  background-image: url('img/radio-on.png');
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 /*

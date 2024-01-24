@@ -18,7 +18,7 @@ export default function Home() {
       <div className="rpgui-content rpgui-cursor-default">
         <div id="container">
           <div className="inner">
-            <div className="rpgui-container framed grid">
+            <div className="rpgui-container framed">
               <HeroName />
 
               <HeroOverview stats={HeroStats} />

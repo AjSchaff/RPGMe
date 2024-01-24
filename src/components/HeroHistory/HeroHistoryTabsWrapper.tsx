@@ -1,15 +1,11 @@
 'use client';
+
 import * as React from 'react';
-import { css } from '@emotion/react';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
-import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import HeroHistory from './HeroHistory';
-
-const tabRootStyles = css`
-  font-family: initial;
-`;
+import { HeroHistoryCareer, HeroHistoryWeb3 } from '../../constants';
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -29,7 +25,7 @@ function CustomTabPanel(props: TabPanelProps) {
       aria-labelledby={`simple-tab-${index}`}
       {...other}
     >
-      {value === index && <Box sx={{ p: 3 }}>{children}</Box>}
+      {value === index && <Box>{children}</Box>}
     </div>
   );
 }
@@ -62,16 +58,16 @@ export default function BasicTabs() {
             },
           }}
         >
-          <Tab className="rpgui-button" label="Web3 Experience" {...a11yProps(0)} />
-          <Tab className="rpgui-button mx-1" label="Career Experience" {...a11yProps(1)} />
-          <Tab className="rpgui-button" label="About Me" {...a11yProps(2)} />
+          <Tab className="rpgui-button" label="Web3" {...a11yProps(0)} />
+          <Tab className="rpgui-button mx-1" label="Career" {...a11yProps(1)} />
+          <Tab className="rpgui-button" label="About" {...a11yProps(2)} />
         </Tabs>
       </Box>
       <CustomTabPanel value={value} index={0}>
-        <HeroHistory />
+        <HeroHistory entries={HeroHistoryWeb3} />
       </CustomTabPanel>
       <CustomTabPanel value={value} index={1}>
-        Item Two
+        <HeroHistory entries={HeroHistoryCareer} />
       </CustomTabPanel>
       <CustomTabPanel value={value} index={2}>
         Item Three
