@@ -1,12 +1,11 @@
 'use client';
+
 import { statBlock } from 'types';
 import React, { FC } from 'react';
-import { ThemeProvider, createTheme } from '@mui/material';
+import { Grid, ThemeProvider, createTheme } from '@mui/material';
 import StatBars from './HeroAttributes/StatBars';
 import HeroAttributes from './HeroAttributes/HeroAttributes';
-import HeroHistory from './HeroHistory/HeroHistory';
 import HeroHistoryTabsWrapper from './HeroHistory/HeroHistoryTabsWrapper';
-
 export interface Props {
   stats: statBlock[];
 }
@@ -24,9 +23,6 @@ const theme = createTheme({
           '&.Mui-selected': {
             color: '#fff',
           },
-          selected: {
-            color: 'pink',
-          },
         },
       },
     },
@@ -36,17 +32,19 @@ const theme = createTheme({
 const HeroOverview: FC<Props> = ({ stats }) => {
   return (
     <ThemeProvider theme={theme}>
-      <div className="grid grid-rows-3 grid-flow-col gap-4">
-        <div className="row-span-3">
+      <Grid container spacing={2}>
+        <Grid item xs={12} sm={4} md={3} lg={2}>
           <HeroAttributes stats={stats} />
-        </div>
-        <div className="rpgui-container framed col-span-2">
-          <StatBars />
-        </div>
-        <div className="rpgui-container framed-grey row-span-2 col-span-2">
-          <HeroHistoryTabsWrapper />
-        </div>
-      </div>
+        </Grid>
+        <Grid item xs={12} sm={8} md={9} lg={10}>
+          <div className="rpgui-container framed mb-2">
+            <StatBars />
+          </div>
+          <div>
+            <HeroHistoryTabsWrapper />
+          </div>
+        </Grid>
+      </Grid>
     </ThemeProvider>
   );
 };
