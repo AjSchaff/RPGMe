@@ -44,7 +44,7 @@ export const HeroHistoryWeb3: workHistoryEntry[] = [
 
 export const HeroHistoryCareer: workHistoryEntry[] = [
   {
-    title: 'Principal Engineer at Ally Bank, Charlotte',
+    title: 'Principal Engineer at Ally Bank',
     timePeriod: 'May 2021 — Present',
     image: '/img/ally.png',
     accomplishments: [
@@ -55,7 +55,7 @@ export const HeroHistoryCareer: workHistoryEntry[] = [
     ],
   },
   {
-    title: 'V.P., Software Engineer III at Bank of America, Charlotte',
+    title: 'V.P., Software Engineer III at Bank of America',
     timePeriod: 'January 2020 — May 2021',
     image: '/img/bofa.png',
     accomplishments: [
@@ -69,7 +69,7 @@ export const HeroHistoryCareer: workHistoryEntry[] = [
     ],
   },
   {
-    title: 'V.P., FESA(Front End Standards & Architecture) Team Lead at Bank of America, Charlotte',
+    title: 'V.P., FESA(Front End Standards & Architecture) Team Lead at Bank of America',
     timePeriod: 'November 2018 — January 2020',
     image: '/img/bofa.png',
     accomplishments: [
@@ -87,7 +87,7 @@ export const HeroHistoryCareer: workHistoryEntry[] = [
     ],
   },
   {
-    title: 'V.P., UI Developer, SEO Technology Lead at Bank of America, Charlotte',
+    title: 'V.P., UI Developer, SEO Technology Lead at Bank of America',
     timePeriod: 'February 2018 — November 2018',
     image: '/img/bofa.png',
     accomplishments: [

@@ -50,6 +50,7 @@ export default function BasicTabs() {
         <Tabs
           className="from-inherit"
           value={value}
+          variant="scrollable"
           onChange={handleChange}
           aria-label="basic tabs example"
           TabIndicatorProps={{
