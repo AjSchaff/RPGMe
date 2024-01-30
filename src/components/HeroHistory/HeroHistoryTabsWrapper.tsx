@@ -5,7 +5,7 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 import HeroHistory from './HeroHistory';
-import { HeroHistoryCareer, HeroHistoryWeb3 } from '../../constants';
+import { HeroHistoryAbout, HeroHistoryCareer, HeroHistoryWeb3 } from '../../constants';
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -72,7 +72,7 @@ export default function BasicTabs() {
         <HeroHistory entries={HeroHistoryCareer} />
       </CustomTabPanel>
       <CustomTabPanel value={value} index={2}>
-        Item Three
+        <HeroHistory entries={HeroHistoryAbout} />
       </CustomTabPanel>
     </Box>
   );

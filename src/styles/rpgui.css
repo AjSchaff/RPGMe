@@ -322,6 +322,9 @@ inside your html file.
 
 /* game div with golden2 background image*/
 .rpgui-container.framed-golden-2 {
+  @media only screen and (max-width: 600px) {
+    padding: 12px 3px;
+  }
   /* border */
   border-style: solid;
   border-image-source: url('img/border-image-golden2.png');
@@ -343,6 +346,9 @@ inside your html file.
 
 /* game div with soft grey background image*/
 .rpgui-container.framed-grey {
+  @media only screen and (max-width: 600px) {
+    padding: 3px;
+  }
   position: relative;
   /* border */
   border-style: solid;
@@ -351,6 +357,7 @@ inside your html file.
   border-image-slice: 3 3 3 3;
   border-image-width: 7px;
   border-width: 7px;
+
   padding: 12px;
   /* internal border */
   box-sizing: border-box;

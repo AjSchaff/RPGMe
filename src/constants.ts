@@ -35,7 +35,7 @@ export const HeroHistoryWeb3: workHistoryEntry[] = [
     image: '/img/orc.png',
     accomplishments: [
       'Revamped the Homepage for etherorcs.com, resulting in a more engaging and user-friendly interface.',
-      'Developed the etherorcs.com/town experience, enabling users who own an Orc or Ally NFT to visit multiple locations within the game.',
+      'Developed the etherorcs.com town experience, enabling users who own an Orc or Ally NFT to visit multiple locations within the game.',
       "Designed and implemented the Tour experience, providing users who do not own an Orc with a captivating introduction to the game's world.",
       'Contributed to the development of the Dungeon Crawl game, playing a key role in designing and refining the combat system, loot system, and leader boards.',
     ],
@@ -96,5 +96,26 @@ export const HeroHistoryCareer: workHistoryEntry[] = [
       'Led a small team of developers to manage deadlines, risks, and capacity, while also maintaining a healthy backlog of work items.',
       'Ensured that all SEO-related platform modules were up-to-date and presented pre-render snapshots correctly for search engines.',
     ],
+  },
+];
+
+export const HeroHistoryAbout: workHistoryEntry[] = [
+  {
+    title: 'Father',
+    timePeriod: 'May 2022 - Present',
+    image: '/img/father.png',
+    accomplishments: ['test'],
+  },
+  {
+    title: 'Web 3 Enthusiast',
+    timePeriod: 'some time',
+    image: '/img/father.png',
+    accomplishments: [''],
+  },
+  {
+    title: 'Warhammer',
+    timePeriod: 'some time',
+    image: '/img/father.png',
+    accomplishments: [''],
   },
 ];
