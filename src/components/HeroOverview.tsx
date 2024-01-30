@@ -19,7 +19,6 @@ const theme = createTheme({
     MuiTab: {
       styleOverrides: {
         root: {
-          paddingTop: 24,
           '&.Mui-selected': {
             color: '#fff',
           },

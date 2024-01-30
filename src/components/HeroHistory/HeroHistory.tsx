@@ -28,7 +28,7 @@ const HeroHistory: FC<HistoryProps> = ({ entries }) => {
             <h3 className={smDown ? 'text-center' : 'text-left'}>{entry.title}</h3>
             <h4 className={smDown ? 'text-center' : 'text-left'}>{entry.timePeriod}</h4>
           </Grid>
-          <Grid item xs={12} className="mb-6 rpgui-container framed">
+          <Grid item xs={12} className="rpgui-container framed mb-6">
             <ul className="rpgui-container framed-grey">
               {entry.accomplishments.map((item, index) => (
                 <li key={index} className="pb-2">
