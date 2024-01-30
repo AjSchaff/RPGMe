@@ -60,9 +60,9 @@ export default function BasicTabs() {
             },
           }}
         >
-          <Tab className="rpgui-button w-48" label="Web3" {...a11yProps(0)} />
-          <Tab className="rpgui-button mx-1 w-48" label="Career" {...a11yProps(1)} />
-          <Tab className="rpgui-button w-48" label="About" {...a11yProps(2)} />
+          <Tab className="rpgui-button w-48 pt-6" label="Web3" {...a11yProps(0)} />
+          <Tab className="rpgui-button mx-1 w-48 pt-6" label="Career" {...a11yProps(1)} />
+          <Tab className="rpgui-button w-48 pt-6" label="About" {...a11yProps(2)} />
         </Tabs>
       </Box>
       <CustomTabPanel value={value} index={0}>
