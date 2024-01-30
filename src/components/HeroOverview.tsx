@@ -35,7 +35,7 @@ const HeroOverview: FC<Props> = ({ stats }) => {
   return (
     <ThemeProvider theme={theme}>
       <Grid container spacing={2}>
-        <Grid container={matches} spacing={1} item xs={12} md={3} lg={2}>
+        <Grid container={matches} spacing={matches ? 1 : undefined} item xs={12} md={3} lg={2}>
           <HeroAttributes stats={stats} />
         </Grid>
         <Grid item xs={12} md={9} lg={10}>
