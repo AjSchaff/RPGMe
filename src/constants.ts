@@ -107,18 +107,26 @@ export const HeroHistoryAbout: workHistoryEntry[] = [
     title: 'Father',
     timePeriod: 'May 2022 - Present',
     image: '/img/father.png',
-    accomplishments: ['test'],
+    accomplishments: [
+      'My son is my whole wide world.  I love spending time with him and traveling the world as a family.  We recently got back from a trip to Portugal where we spent two months there.',
+    ],
   },
   {
     title: 'Web 3 Enthusiast',
-    timePeriod: 'some time',
-    image: '/img/father.png',
-    accomplishments: [''],
+    timePeriod: 'October 2012-Present',
+    image: '/img/bitcoin.jpg',
+    accomplishments: [
+      "I've loved Crypto since I learned about it, back when ETH was $15.00.  Since then, I've been fascinated by decentralized finance and GameFi.",
+    ],
   },
   {
-    title: 'Warhammer',
-    timePeriod: 'some time',
-    image: '/img/father.png',
-    accomplishments: [''],
+    title: 'Warhammer 40,000',
+    timePeriod: 'June 2014-Present',
+    image: '/img/warhammer.jpg',
+    accomplishments: [
+      'I started playing Warhammer 40k almost 10 years ago during 7th Edition.',
+      'I started with Orcs, and now have Space Wolves & Aeldari.',
+      'What I love about Warhammer is the strategy and sportsmanship it demands.',
+    ],
   },
 ];
