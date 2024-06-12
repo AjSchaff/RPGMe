@@ -6,6 +6,7 @@ import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 import HeroHistory from './HeroHistory';
 import { HeroHistoryAbout, HeroHistoryCareer, HeroHistoryWeb3 } from '../../constants';
+import { useAppContext } from '@src/app/AppContext';
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -39,6 +40,7 @@ function a11yProps(index: number) {
 
 export default function BasicTabs() {
   const [value, setValue] = React.useState(0);
+  const { show } = useAppContext();
 
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
     setValue(newValue);
@@ -61,8 +63,8 @@ export default function BasicTabs() {
           }}
         >
           <Tab className="rpgui-button w-48 pt-6" label="Web3" {...a11yProps(0)} />
-          <Tab className="rpgui-button mx-1 w-48 pt-6" label="Career" {...a11yProps(1)} />
-          <Tab className="rpgui-button w-48 pt-6" label="About" {...a11yProps(2)} />
+          {show && <Tab className="rpgui-button mx-1 w-48 pt-6" label="Career" {...a11yProps(1)} />}
+          {show && <Tab className="rpgui-button w-48 pt-6" label="About" {...a11yProps(2)} />}
         </Tabs>
       </Box>
       <CustomTabPanel value={value} index={0}>
