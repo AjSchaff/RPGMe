@@ -9,4 +9,5 @@ export interface workHistoryEntry {
   timePeriod: string;
   image: string;
   accomplishments: string[];
+  techUsed?: string[];
 }

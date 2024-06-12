@@ -6,7 +6,7 @@ import { HeroStats } from '../constants';
 export default function Home() {
   return (
     <>
-      <Script src="/rpgui.js" strategy="beforeInteractive" />
+      <Script src="/rpgui.js" strategy="afterInteractive" />
 
       <div className="rpgui-content rpgui-cursor-default">
         <div id="container">

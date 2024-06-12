@@ -20,14 +20,14 @@ export const HeroStats: statBlock[] = [
 export const HeroHistoryWeb3: workHistoryEntry[] = [
   {
     title: 'Realm - Frontend Engineer, Treasure[Arbitrum]',
-    timePeriod: 'February 2023 — July 2023',
+    timePeriod: 'February 2023 — Present',
     image: '/img/realm.png',
     accomplishments: [
       'Spearheaded the implementation of the Realms Loot-box system, resulting in a more immersive and rewarding gameplay experience.',
       'Contributed to the development of staking systems for in-game assets, enabling players to earn rewards for their in-game actions.',
       'Implemented TreasureTags, a unique feature that allows users to showcase their Web3 presence and see who they are playing with.',
-      'Upgraded the Prime Convergence game loop by incorporating a live feed of contributions using Subgraph and GraphQL, resulting in increased engagement and improved player experience.',
     ],
+    techUsed: ['TypeScript', 'React', 'Subgraph', 'Web3.js'],
   },
   {
     title: 'EtherOrcs - Frontend Engineer, [Polygon]',
@@ -39,6 +39,7 @@ export const HeroHistoryWeb3: workHistoryEntry[] = [
       "Designed and implemented the Tour experience, providing users who do not own an Orc with a captivating introduction to the game's world.",
       'Contributed to the development of the Dungeon Crawl game, playing a key role in designing and refining the combat system, loot system, and leader boards.',
     ],
+    techUsed: ['React'],
   },
 ];
 
@@ -53,6 +54,7 @@ export const HeroHistoryCareer: workHistoryEntry[] = [
       'Conducted interviews and facilitated on-boarding for new developers to our team, ensuring a seamless integration into the workflow.',
       'Ensured the security and privacy of Proprietary Information in the authenticated space, demonstrating a commitment to maintaining the highest standards of data protection.',
     ],
+    techUsed: ['TypeScript', 'React'],
   },
   {
     title: 'V.P., Software Engineer III at Bank of America',
@@ -67,6 +69,7 @@ export const HeroHistoryCareer: workHistoryEntry[] = [
       'Led successful onboarding efforts of new hires, organizing knowledge transfers and serving as a mentor to new team members.',
       'Created detailed User Journey charts to document user interactions and improve understanding of software delivery.',
     ],
+    techUsed: ['TypeScript'],
   },
   {
     title: 'V.P., FESA(Front End Standards & Architecture) Team Lead at Bank of America',

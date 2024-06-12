@@ -8,7 +8,7 @@ const PS2P = Press_Start_2P({ subsets: ['latin'], weight: '400' });
 export const metadata: Metadata = {
   title: 'The Hero of Ages: Andrew Schaffner',
   description: 'My personal character sheet',
-  icons: '../../public/favicon.ico',
+  icons: '/favicon.ico',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
