@@ -47,7 +47,7 @@ const HeroName: FC = () => {
             <XIcon />
           </Button>
           <Button className="rpgui-button pt-6" onClick={() => setOpen(true)}>
-            Unlock Web2 Attributes
+            Unlock Web2 Attribute
           </Button>
         </div>
 
