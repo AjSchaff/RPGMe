@@ -1,4 +1,3 @@
-import Script from 'next/script';
 import HeroOverview from '@components/HeroOverview';
 import HeroName from '@components/HeroName/HeroName';
 import { HeroStats } from '../constants';
@@ -6,8 +5,6 @@ import { HeroStats } from '../constants';
 export default function Home() {
   return (
     <>
-      <Script src="/rpgui.js" strategy="afterInteractive" />
-
       <div className="rpgui-content rpgui-cursor-default">
         <div id="container">
           <div className="inner">

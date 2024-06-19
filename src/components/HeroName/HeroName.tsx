@@ -46,8 +46,14 @@ const HeroName: FC = () => {
           <Button variant="text" href="https://twitter.com/_Dicey__">
             <XIcon />
           </Button>
-          <Button className="rpgui-button pt-6" onClick={() => setOpen(true)}>
-            Unlock Web2 Attributes
+          <Button
+            className="rpgui-button w-96 pt-2"
+            sx={{
+              color: '#fff',
+            }}
+            onClick={() => setOpen(true)}
+          >
+            Unlock Web2 Attribute
           </Button>
         </div>
 
@@ -83,7 +89,7 @@ const PasswordModal: FC<PasswordModalProps> = ({ open, onClose, onValidate }) =>
           top: '50%',
           left: '50%',
           transform: 'translate(-50%, -50%)',
-          width: 400,
+          width: 600,
           p: 4,
         }}
       >
@@ -103,6 +109,7 @@ const PasswordModal: FC<PasswordModalProps> = ({ open, onClose, onValidate }) =>
               sx={{ mt: 2 }}
             />
             <Button
+              className="rpgui-button w-80"
               variant="contained"
               color="primary"
               onClick={() => onValidate(password)}
