@@ -18,7 +18,7 @@ const HeroName: FC = () => {
   const handleClose = () => setOpen(false);
 
   const handleValidatePassword = (password: string) => {
-    if (password === 'secret') {
+    if (password === 'Mellon') {
       setOpen(false);
       setShow(true);
     } else {
@@ -54,7 +54,7 @@ const HeroName: FC = () => {
             }}
             onClick={() => setOpen(true)}
           >
-            <p className="px-12">Unlock Web2 Attribute</p>
+            <p className="px-12">Dox Dicey</p>
           </Button>
         </div>
 
@@ -97,7 +97,7 @@ const PasswordModal: FC<PasswordModalProps> = ({ open, onClose, onValidate }) =>
         <div className="rpgui-container framed-golden">
           <div className="rpgui-content">
             <Typography id="modal-modal-title" variant="h6" component="h2">
-              Enter Password
+              Speak Friend and Enter
             </Typography>
             <TextField
               id="password-input"
