@@ -50,7 +50,6 @@ const HeroName: FC = () => {
             className="rpgui-button w-full flex-grow-0"
             sx={{
               color: '#fff',
-              font: 'inherit',
               pt: 1.5,
             }}
             onClick={() => setOpen(true)}
@@ -97,7 +96,7 @@ const PasswordModal: FC<PasswordModalProps> = ({ open, onClose, onValidate }) =>
       >
         <div className="rpgui-container framed-golden">
           <div className="rpgui-content">
-            <Typography id="modal-modal-title" variant="h6" component="h2" sx={{ font: 'inherit' }}>
+            <Typography id="modal-modal-title" variant="h6" component="h2">
               Enter Password
             </Typography>
             <TextField
@@ -108,14 +107,14 @@ const PasswordModal: FC<PasswordModalProps> = ({ open, onClose, onValidate }) =>
               value={password}
               onChange={handlePasswordChange}
               autoFocus
-              sx={{ mt: 2, font: 'inherit' }}
+              sx={{ mt: 2 }}
             />
             <Button
               className="rpgui-button w-80"
               variant="contained"
               color="primary"
               onClick={() => onValidate(password)}
-              sx={{ mt: 2, font: 'inherit', pt: 1.5 }}
+              sx={{ mt: 2, pt: 1.5 }}
             >
               Validate Password
             </Button>

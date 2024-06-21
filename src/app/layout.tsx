@@ -12,7 +12,7 @@ import { theme } from '../theme';
 const PS2P = Press_Start_2P({ subsets: ['latin'], weight: '400' });
 
 export const metadata: Metadata = {
-  title: 'The Hero of Ages: Andrew Schaffner',
+  title: 'The Hero of Ages: Dicey',
   description: 'My personal character sheet',
   icons: '/favicon.ico',
 };
@@ -28,7 +28,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </AppProvider>
       </body>
 
-      <Script src="/rpgui.js" strategy="lazyOnload" />
+      {/* <Script src="/rpgui.js" strategy="lazyOnload" /> */}
     </html>
   );
 }
