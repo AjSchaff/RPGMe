@@ -23,6 +23,7 @@ export const HeroHistoryWeb3: workHistoryEntry[] = [
     timePeriod: 'February 2023 — Present',
     image: '/img/realm.png',
     accomplishments: [
+      'Redesigned Realm Collectible Production loop so that users can now produce assets for all of their collectibles in 1 transaction.',
       'Spearheaded the implementation of the Realms Loot-box system, resulting in a more immersive and rewarding game-play experience.',
       'Contributed to the development of staking systems for in-game assets, enabling players to earn rewards for their in-game actions.',
       'Implemented TreasureTags, a unique feature that allows users to showcase their Web3 presence and see who they are playing with.',
