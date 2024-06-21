@@ -1,5 +1,3 @@
-import { Press_Start_2P } from 'next/font/google';
-
 import type { Metadata } from 'next';
 import Script from 'next/script';
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v13-appRouter';
@@ -7,6 +5,7 @@ import { AppProvider } from './AppContext';
 import { RPGUIProvider } from './RPGUIContext';
 import { ThemeProvider } from '@mui/material/styles';
 
+import { Press_Start_2P } from 'next/font/google';
 import '@styles/globals.css';
 
 import { theme } from '../theme';
