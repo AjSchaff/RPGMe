@@ -28,7 +28,7 @@ const HeroName: FC = () => {
 
   return (
     <>
-      <div className="rpgui-container framed-golden flex justify-between mb-2">
+      <div className="rpgui-container framed-golden flex flex-wrap justify-between mb-2">
         <div className="flex">
           <Avatar
             sx={{ height: '70px', width: '70px' }}
@@ -42,18 +42,19 @@ const HeroName: FC = () => {
           </div>
         </div>
 
-        <div className="flex-row my-auto">
+        <div className="flex my-auto">
           <Button variant="text" href="https://twitter.com/_Dicey__">
             <XIcon />
           </Button>
           <Button
-            className="rpgui-button w-96 pt-2"
+            className="rpgui-button w-full flex-grow-0"
             sx={{
               color: '#fff',
+              pt: 1.5,
             }}
             onClick={() => setOpen(true)}
           >
-            Unlock Web2 Attribute
+            <p className="px-12">Unlock Web2 Attribute</p>
           </Button>
         </div>
 
@@ -99,7 +100,6 @@ const PasswordModal: FC<PasswordModalProps> = ({ open, onClose, onValidate }) =>
               Enter Password
             </Typography>
             <TextField
-            className='rpgui'
               id="password-input"
               label="Password"
               variant="outlined"
@@ -114,7 +114,7 @@ const PasswordModal: FC<PasswordModalProps> = ({ open, onClose, onValidate }) =>
               variant="contained"
               color="primary"
               onClick={() => onValidate(password)}
-              sx={{ mt: 2 }}
+              sx={{ mt: 2, pt: 1.5 }}
             >
               Validate Password
             </Button>

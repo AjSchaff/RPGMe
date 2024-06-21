@@ -16,7 +16,7 @@ const HeroHistory: FC<HistoryProps> = ({ entries }) => {
   return (
     <Box sx={{ flexGrow: 1 }}>
       {entries.map((entry) => (
-        <Grid key={entry.title} container>
+        <Grid id={entry.title} key={entry.title} container mb={5}>
           <Grid container item xs sm={3} md={2} justifyContent={smDown ? 'center' : 'flex'}>
             <div className="rpgui-container framed mb-3 mr-3">
               <div style={{ borderRadius: '7px', overflow: 'hidden' }}>
