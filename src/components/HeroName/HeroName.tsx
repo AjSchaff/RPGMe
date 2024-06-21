@@ -28,7 +28,7 @@ const HeroName: FC = () => {
 
   return (
     <>
-      <div className="rpgui-container framed-golden flex justify-between mb-2">
+      <div className="rpgui-container framed-golden flex flex-wrap justify-between mb-2">
         <div className="flex">
           <Avatar
             sx={{ height: '70px', width: '70px' }}
@@ -42,18 +42,20 @@ const HeroName: FC = () => {
           </div>
         </div>
 
-        <div className="flex-row my-auto">
+        <div className="flex my-auto">
           <Button variant="text" href="https://twitter.com/_Dicey__">
             <XIcon />
           </Button>
           <Button
-            className="rpgui-button w-96 pt-2"
+            className="rpgui-button w-full flex-grow-0"
             sx={{
               color: '#fff',
+              font: 'inherit',
+              pt: 1.5,
             }}
             onClick={() => setOpen(true)}
           >
-            Unlock Web2 Attribute
+            <p className="px-12">Unlock Web2 Attribute</p>
           </Button>
         </div>
 
@@ -95,7 +97,7 @@ const PasswordModal: FC<PasswordModalProps> = ({ open, onClose, onValidate }) =>
       >
         <div className="rpgui-container framed-golden">
           <div className="rpgui-content">
-            <Typography id="modal-modal-title" variant="h6" component="h2">
+            <Typography id="modal-modal-title" variant="h6" component="h2" sx={{ font: 'inherit' }}>
               Enter Password
             </Typography>
             <TextField
@@ -106,14 +108,14 @@ const PasswordModal: FC<PasswordModalProps> = ({ open, onClose, onValidate }) =>
               value={password}
               onChange={handlePasswordChange}
               autoFocus
-              sx={{ mt: 2 }}
+              sx={{ mt: 2, font: 'inherit' }}
             />
             <Button
               className="rpgui-button w-80"
               variant="contained"
               color="primary"
               onClick={() => onValidate(password)}
-              sx={{ mt: 2 }}
+              sx={{ mt: 2, font: 'inherit', pt: 1.5 }}
             >
               Validate Password
             </Button>

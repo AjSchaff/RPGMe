@@ -4,6 +4,7 @@ import type { Metadata } from 'next';
 import Script from 'next/script';
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v13-appRouter';
 import { AppProvider } from './AppContext';
+import { RPGUIProvider } from './RPGUIContext';
 import { ThemeProvider } from '@mui/material/styles';
 
 import '@styles/globals.css';
@@ -21,15 +22,17 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <AppRouterCacheProvider>
-        <body className={PS2P.className}>
-          <AppProvider>
-            <ThemeProvider theme={theme}>{children}</ThemeProvider>
-          </AppProvider>
-        </body>
-      </AppRouterCacheProvider>
+      <body className={PS2P.className}>
+        <AppProvider>
+          <RPGUIProvider>
+            <AppRouterCacheProvider>
+              <ThemeProvider theme={theme}>{children}</ThemeProvider>
+            </AppRouterCacheProvider>
+          </RPGUIProvider>
+        </AppProvider>
+      </body>
 
-      <Script src="/rpgui.js" strategy="afterInteractive" />
+      <Script src="/rpgui.js" strategy="lazyOnload" />
     </html>
   );
 }

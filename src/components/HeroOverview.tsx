@@ -39,9 +39,8 @@ const HeroOverview: FC<Props> = ({ stats }) => {
           <HeroAttributes stats={stats} />
         </Grid>
         <Grid item xs={12} md={9} lg={10}>
-          <div className="rpgui-container framed mb-2">
-            <StatBars />
-          </div>
+          <StatBars />
+
           <div>
             <HeroHistoryTabsWrapper />
           </div>
